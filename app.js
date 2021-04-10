@@ -6,7 +6,7 @@ const app = express();
 
 // ROUTES TO PAGES //
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + '/form.html')
   })
 
 
