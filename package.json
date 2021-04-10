@@ -1,0 +1,22 @@
+{
+  "name": "bcs-2021-hackathon",
+  "version": "1.0.0",
+  "description": "Hi its arjun this is my first commit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjundha/BCS-2021-Hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arjundha/BCS-2021-Hackathon/issues"
+  },
+  "homepage": "https://github.com/arjundha/BCS-2021-Hackathon#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
