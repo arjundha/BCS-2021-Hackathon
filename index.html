@@ -12,8 +12,7 @@
     <script>
 
         function onSuccess(googleUser) {
-       document.getElementById("hello").textContent = googleUser.getBasicProfile().getName();
-       myFunction();
+       console.log(googleUser.getBasicProfile().getName());
 
     }
 
@@ -31,34 +30,12 @@
             'onfailure': onFailure,
         });
     }
-        function myFunction() {
-            let x = document.getElementById("watchingform");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
 </script>
 
 <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 
 
 
-
-<div class="form-style-3" >
-
-    <form id = 'watchingform'>
-        <fieldset><legend>Wanna Watch</legend>
-            <label><span id ="hello">Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
-            <label><span>What you are watching <span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" /></label>
-        </fieldset>
-        <fieldset><legend>Comments</legend>
-            <label><span> What do you think of the show so far <3 <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
-            <label><span> </span><input type="submit" value="Submit" /></label>
-        </fieldset>
-    </form>
-</div>
 
 </body>
 </html>
