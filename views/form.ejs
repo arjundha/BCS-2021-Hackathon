@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href =cute.css>
+    <link rel="stylesheet" type="text/css" href = "/public/css/cute.css">
 </head>
 <body>
 
@@ -11,11 +11,11 @@
 
     <form>
         <fieldset><legend>Wanna Watch</legend>
-            <label><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+            <label><span><%= name %> <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
             <label><span>What you are watching <span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" /></label>
         </fieldset>
         <fieldset><legend>Comments</legend>
-            <label><span> What do you think of the show so far <3 <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
+            <label><span> What do you think of the show so far <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
             <label><span> </span><input type="submit" value="Submit" /></label>
         </fieldset>
     </form>
