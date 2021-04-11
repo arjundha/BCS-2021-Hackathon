@@ -13,6 +13,7 @@
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
+    z-index: -2;
 }
 
 .navbar{
@@ -27,6 +28,8 @@
     width: 120px;
     cursor: pointer;
 }
+
+
 #my-signin2{
     margin-top: 30px;
 }
@@ -68,4 +71,14 @@ body {
     Helvetica, sans-serif;
     font-size: 17px;
     color: white;
+}
+
+.feature-image{
+    height: 80%;
+    width: auto;
+    position: fixed;
+    bottom: 0;
+    right: 160px;
+    margin-bottom: 30px;
+    z-index: -1;
 }
