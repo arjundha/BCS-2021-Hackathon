@@ -10,7 +10,6 @@ app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, 'views'));
 
 // MONGODB  //
-
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://masteruser:ariana123@cluster0.d8qen.mongodb.net/wannaWatch?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -19,8 +18,6 @@ client.connect(err => {
     console.log("Connected to the database")
     // perform actions on the collection object
 });
-
-
 
 //    SESSION  //
 app.use(session({
@@ -33,12 +30,10 @@ app.use(session({
 // ROUTES TO PAGES //
 app.get('/', function(req, res) {
     res.render('index')
-    console.log(req.session)
 }
     )
 
 app.get('/form', function(req, res) {
-    console.log(req.session)
     res.render('form', {
         name: "Arjun"
     })
@@ -49,7 +44,6 @@ app.get('/aboutus', function(req, res) {
 )
 
 app.get('/main', function(req, res) {
-    console.log(req.session)
     const collection = client.db("wannaWatch").collection("posts");
     collection.find().toArray()
     .then(results => {
