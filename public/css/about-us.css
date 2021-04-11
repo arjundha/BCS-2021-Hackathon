@@ -10,17 +10,52 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 .column {
     float: left;
     width: 33.3%;
     margin-bottom: 16px;
     padding: 0 8px;
+    position: relative;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+}
+
+.navbar{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 20px;
+    width: 120px;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+nav{
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    margin: 0px 20px;
 }
 
 .about-section {
