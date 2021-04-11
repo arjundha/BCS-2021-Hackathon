@@ -37,6 +37,9 @@ app.get('/form', function(req, res) {
         name: "Kyla"
     })
   })
+app.get('/aboutus', function(req, res) {
+    res.render('aboutus')}
+)
 
 var port = process.env.PORT || 8080;
 
