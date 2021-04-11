@@ -4,11 +4,12 @@
 }
 
 .background {
-    background: url("/public/src/background.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("/public/src/background.png");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
     background-size: cover;
+    z-index: -2;
 }
 
 .container {
@@ -20,7 +21,6 @@
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
-    z-index: -2;
 }
 
 .navbar{
@@ -39,6 +39,7 @@
 
 #my-signin2{
     margin-top: 30px;
+    margin-left: 70px;
 }
 
 nav{
@@ -58,16 +59,18 @@ nav ul li a{
     margin: 0px 20px;
 }
 
-.container h1{
+.content h1{
     font-size: 60px;
     font-weight: 100;
     margin-top: 24px;
     margin-bottom: 15px;
+    margin-left: 70px;
     color: #fbf4ff;
 }
 
 .content p{
     font-size: 20px;
+    margin-left: 70px;
     color: #fbf4ff;
 }
 
