@@ -9,13 +9,13 @@
 
 <div class="form-style-3" >
 
-    <form>
+    <form action="/create_post" method="POST">
         <fieldset><legend>Wanna Watch</legend>
-            <label><span><%= name %> <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
-            <label><span>What you are watching <span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" /></label>
+            <label><span>Name<span class="required">*</span></span><input type="text" class="input-field" name="name" value="<%= name %>" /></label>
+            <label><span>What you are watching <span class="required">*</span></span><input type="text" class="input-field" name="title" value="" /></label>
         </fieldset>
         <fieldset><legend>Comments</legend>
-            <label><span> What do you think of the show so far <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
+            <label><span> What do you think of the show so far <span class="required">*</span></span><textarea name="comment" class="textarea-field"></textarea></label>
             <label><span> </span><input type="submit" value="Submit" /></label>
         </fieldset>
     </form>

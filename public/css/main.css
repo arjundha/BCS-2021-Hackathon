@@ -3,10 +3,17 @@
     padding: 0;
 }
 
+.background {
+    background: url("/public/src/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .container {
     height: 100vh;
     width: 100%;
-    background-image: url("/public/src/background.png");
     background-position: center;
     background-size: cover;
     padding-left: 5%;
