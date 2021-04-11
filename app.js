@@ -40,7 +40,7 @@ app.get('/', function(req, res) {
 app.get('/form', function(req, res) {
     console.log(req.session)
     res.render('form', {
-        name: "Kyla"
+        name: "Arjun"
     })
   })
 app.get('/aboutus', function(req, res) {
