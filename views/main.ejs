@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="660008335782-tho10n8ib3is46f1rkh09j62afhdtakf.apps.googleusercontent.com">
     <meta charset="UTF-8">
     <title>Wanna Watch?</title>
-    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/mainpage.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
+<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav class="navbar sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">    <img id="navimg" src="/public/src/Logo.png" class="logo" > </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/aboutus">About Us</a></li>
+            <li class="nav-item"><a href="/form">Post</a></li>
+            <li class="nav-item active"><a href="/main">Watch</a></li>
+        </ul>
+    </nav>
+</div> -->
+<nav class="navbar transparent navbar-inverse navbar-fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img id="navimg" src="/public/src/Logo.png" class="logo" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/form">Post</a>
+          </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/main">Watch</a>
+        </li>
+      </ul>
 
+    </div>
+  </nav>
 <body>
-    <div class="background">
-        <div class="navbar">
-            <img src="/public/src/Logo.png" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/form">About Us</a></li>
-                    <li><a href="">Form</a></li>
-                </ul>
-            </nav>
-        </div>
+    <div class="container" style="text-align: center;">
+        <h1>Recent Posts:</h1>
 
-
-        <div class="container">
-            <h1>Recent Posts:</h1>
-
-            <% posts.forEach((post) => { %>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title"><%= post.title %></h5>
-                      <h6 class="card-subtitle mb-2 text-muted"><%= post.name %></h6>
-                      <p class="card-text"><%= post.comment %></p>
-                      <a href="#" class="card-link">Wanna watch?</a>
-                    </div>
-                  </div>
-                  <br>
-            <% }); %>
-        </div>
-
+        <% posts.forEach((post) => { %>
+            <div class="card child" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><%= post.title %></h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><%= post.name %></h6>
+                    <p class="card-text"><%= post.comment %></p>
+                    
+                    <a href="https://discordapp.com/users/<%= post.discord %>/" class="card-link">Wanna watch?</a>
+                </div>
+                </div>
+                <br>
+        <% }); %>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
