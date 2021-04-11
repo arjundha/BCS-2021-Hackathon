@@ -48,6 +48,9 @@ app.get('/form', function(req, res) {
         name: "Kyla"
     })
   })
+app.get('/aboutus', function(req, res) {
+    res.render('aboutus')}
+)
 
   app.get('/main', function(req, res) {
     const collection = client.db("wannaWatch").collection("posts");
