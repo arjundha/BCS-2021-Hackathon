@@ -1,0 +1,24 @@
+#navimg {
+    width: 8vw;
+}
+
+.child {
+    /* Center vertically and horizontally */
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  }
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #d8dede;
+    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.4);
+ }
