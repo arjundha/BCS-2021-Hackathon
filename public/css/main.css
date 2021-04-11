@@ -68,6 +68,10 @@ nav ul li a{
     margin: 0px 20px;
 }
 
+li a:hover {
+    background-color: darkorange;
+}
+
 .content h1{
     font-size: 60px;
     font-weight: 100;
